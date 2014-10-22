@@ -28,14 +28,24 @@ namespace richweber\wm\exchanger;
  */
 class Exchanger
 {
+    /**
+     * [$wmid description]
+     * @var string
+     */
     public $wmid = '';
+
+    /**
+     * [$url description]
+     * @var [type]
+     */
+    private $url;
 
     /**
      * XML-интерфейс получения текущих доступных объемов обмена
      */
     public function getVolumeExchange()
     {
-        //
+        $this->url = 'https://wm.exchanger.ru/asp/XMLbestRates.asp';
     }
 
     /**
@@ -43,7 +53,7 @@ class Exchanger
      */
     public function getCurrentApplications()
     {
-        //
+        $this->url = 'https://wm.exchanger.ru/asp/XMLWMList.asp';
     }
 
     /**
@@ -51,7 +61,7 @@ class Exchanger
      */
     public function getHistoryExchangeRates()
     {
-        //
+        $this->url = 'https://wm.exchanger.ru/asp/XMLQuerysStats.asp';
     }
 
     /**
@@ -60,7 +70,7 @@ class Exchanger
      */
     public function getListApplications()
     {
-        //
+        $this->url = 'https://wm.exchanger.ru/asp/XMLWMList2.asp';
     }
 
     /**
@@ -69,7 +79,7 @@ class Exchanger
      */
     public function getListCounterApplications()
     {
-        //
+        $this->url = 'https://wm.exchanger.ru/asp/XMLWMList3.asp';
     }
 
     /**
@@ -78,7 +88,7 @@ class Exchanger
      */
     public function removeApplication()
     {
-        //
+        $this->url = 'https://wm.exchanger.ru/asp/XMLTransDel.asp';
     }
 
     /**
@@ -87,7 +97,7 @@ class Exchanger
      */
     public function changeCourseApplication()
     {
-        //
+        $this->url = 'https://wm.exchanger.ru/asp/XMLTransIzm.asp';
     }
 
     /**
@@ -96,7 +106,7 @@ class Exchanger
      */
     public function unionTwoApplications()
     {
-        //
+        $this->url = 'https://wm.exchanger.ru/asp/XMLTransUnion.asp';
     }
 
     /**
@@ -104,7 +114,7 @@ class Exchanger
      */
     public function submitNewExchange()
     {
-        //
+        $this->url = 'https://wm.exchanger.ru/asp/XMLTrustPay.asp';
     }
 
     /**
@@ -113,7 +123,7 @@ class Exchanger
      */
     public function buyApplication()
     {
-        //
+        $this->url = 'https://wm.exchanger.ru/asp/XMLQrFromTrIns.asp';
     }
 
     /**
@@ -122,6 +132,6 @@ class Exchanger
      */
     public function getListCounterOrders()
     {
-        //
+        $this->url = 'https://wm.exchanger.ru/asp/XMLWMList3Det.asp';
     }
 }
