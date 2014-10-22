@@ -1,0 +1,26 @@
+{
+    "name": "richweber/yii2-wm-exchanger",
+    "version":"1.0.0",
+    "description": "WebMoney Exchanger API for the Yii 2 Framework",
+    "keywords": ["yii2", "webmoney", "exchange", "api", "wm"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/RichWeber/yii2-wm-exchanger/issues",
+        "wiki": "https://github.com/RichWeber/yii2-wm-exchanger/wiki",
+        "source": "https://github.com/RichWeber/yii2-wm-exchanger"
+    },
+    "authors": [
+        {
+            "name": "RichWeber",
+            "email": "rbagatyi@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": { "richweber\\wm\\exchanger\\": "" }
+    }
+}
