@@ -47,6 +47,14 @@ class Exchanger
     }
 
     /**
+     * XML-интерфейс получения истории курсов обмена
+     */
+    public function getHistoryExchangeRates()
+    {
+        //
+    }
+
+    /**
      * XML-интерфейс списка новых заявок
      * конкретного ВМ-идентификатора
      */
@@ -104,14 +112,6 @@ class Exchanger
      * чужой новой противоположной по направлению обмена
      */
     public function buyApplication()
-    {
-        //
-    }
-
-    /**
-     * XML-интерфейс получения истории курсов обмена
-     */
-    public function getHistoryExchangeRates()
     {
         //
     }
