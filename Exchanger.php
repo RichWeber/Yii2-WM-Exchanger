@@ -199,7 +199,7 @@ class Exchanger extends Signer
         $this->url = 'https://wm.exchanger.ru/asp/XMLWMList2.asp';
         $this->buildObject();
 
-        $sign = $this->sign($htis->wmid . $type . $queryId);
+        $sign = $this->sign($this->wmid . $type . $queryId);
 
         $this->xml->addChild('wmid', $this->wmid);
         $this->xml->addChild('signstr', $sign);
