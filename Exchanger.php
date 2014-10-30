@@ -322,7 +322,7 @@ class Exchanger extends Signer
         $this->url = 'https://wm.exchanger.ru/asp/XMLTransUnion.asp';
         $this->buildObject();
 
-        $sign = $this->sign($thism->wmid . $operId . $unionOperId);
+        $sign = $this->sign($this->wmid . $operId . $unionOperId);
 
         $this->xml->addChild('wmid', $this->wmid);
         $this->xml->addChild('signstr', $sign);
