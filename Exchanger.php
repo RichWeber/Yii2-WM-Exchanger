@@ -4,7 +4,7 @@
  *
  * @copyright Copyright &copy; Roman Bahatyi, richweber.net, 2014
  * @package yii2-wm-exchanger
- * @version 1.0.0
+ * @version 1.0.1
  */
 
 namespace richweber\wm\exchanger;
