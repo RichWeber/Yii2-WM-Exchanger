@@ -285,7 +285,7 @@ class Exchanger extends Signer
         $operId,
         $cursAmount,
         $cursType = 0,
-        $capitallerwmid = false
+        $capitallerWmid = false
     )
     {
         $this->url = 'https://wm.exchanger.ru/asp/XMLTransIzm.asp';
