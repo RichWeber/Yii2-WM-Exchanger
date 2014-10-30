@@ -254,7 +254,7 @@ class Exchanger extends Signer
         $this->url = 'https://wm.exchanger.ru/asp/XMLTransDel.asp';
         $this->buildObject();
 
-        $sign = $this->sign($this->wmid . $operid);
+        $sign = $this->sign($this->wmid . $operId);
 
         $this->xml->addChild('wmid', $this->wmid);
         $this->xml->addChild('signstr', $sign);
