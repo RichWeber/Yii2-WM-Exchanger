@@ -362,7 +362,7 @@ class Exchanger extends Signer
         $this->url = 'https://wm.exchanger.ru/asp/XMLTrustPay.asp';
         $this->buildObject();
 
-        $sign = $this->sign($htis->wmid . $inPurse . $outPurse . $inAmount . $outAmount);
+        $sign = $this->sign($this->wmid . $inPurse . $outPurse . $inAmount . $outAmount);
 
         $this->xml->addChild('wmid', $this->wmid);
         $this->xml->addChild('signstr', $sign);
